@@ -84,9 +84,9 @@ public class MainActivity extends AppCompatActivity implements IView {
             UsersBean userBean= (UsersBean) data;
             if(mPage==1){
                 adapter.setmDatas(userBean.getData());
-            }else{
-                adapter.addmDatas(userBean.getData());
             }
+                adapter.addmDatas(userBean.getData());
+
             mPage++;
             xRecyclerView.refreshComplete();
             xRecyclerView.loadMoreComplete();

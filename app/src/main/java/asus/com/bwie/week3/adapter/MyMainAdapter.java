@@ -105,7 +105,7 @@ public class MyMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     public void onClick(View v) {
                         ObjectAnimator alpha = ObjectAnimator.ofFloat(holderTwo.imageView2, "alpha", 1f, 0f,1f);
                         alpha.setDuration(2000);
-                        alpha.setRepeatCount(1);
+                        alpha.setRepeatCount(0);
                         alpha.start();
                     }
                 });
@@ -130,7 +130,7 @@ public class MyMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     public void onClick(View v) {
                         ObjectAnimator alpha = ObjectAnimator.ofFloat(holderThree.imageView2, "alpha", 1f, 0f,1f);
                         alpha.setDuration(2000);
-                        alpha.setRepeatCount(1);
+                        alpha.setRepeatCount(0);
                         alpha.start();
                     }
                 });
@@ -139,7 +139,7 @@ public class MyMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     public void onClick(View v) {
                         ObjectAnimator alpha = ObjectAnimator.ofFloat(holderThree.imageView3, "alpha", 1f, 0f,1f);
                         alpha.setDuration(2000);
-                        alpha.setRepeatCount(2);
+                        alpha.setRepeatCount(0);
                         alpha.start();
                     }
                 });
