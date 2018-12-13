@@ -151,6 +151,15 @@ public class MyMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 break;
 
         }
+        viewHolder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if (mclick!=null){
+                    mclick.onLongClick(i);
+                }
+                return true;
+            }
+        });
 
     }
 
